@@ -1,132 +1,103 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <title>Pocket-E RWA </title>
-  <link rel="stylesheet"  href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" href="style.css"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .img-container {
+    background-size: contain;
+      }
+  
+}
+</style>
 </head>
+<body>
 
+<div class="topnav" id="myTopnav">
+  <a href="INDEX.html"style="color:white"; class="active">Home</a>
+  <a href="contact.html"style="color:white;">Contact Us</a>
+  <a href="https://forms.gle/zvcywFzshwGzdzCJ9"style="color:white;">E-Directory Form</a>
+  <a href="https://lookerstudio.google.com/reporting/08742437-b17f-48f1-b3f1-49ba9aa55f2e/page/t"style="color:white;">E-Directory</a>
+ 
+  <a href="https://lookerstudio.google.com/reporting/0558ac56-edaf-4313-ade2-c91bd9228c8f"style="color:white;">Membership Fee 2023-24</a>
+  <a href="payment.html"style="color:white;">Payment Link</a>
+  <a href="https://instagram.com/rwa_pkt_e_mv_2?igshid=NzZhOTFlYzFmZQ=="style="color:white;">Instagram Handle</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
 
-  <section style="background-color: rgba(250, 235, 215, 0.481);">
-    <nav >
-      <ul>
-        <!-- <li><a href="index.html">Home</a></li> -->
-        <!-- <li><a href="about.html">About Us</a></li> -->
-        <!-- <li><a href="membership.html">Membership</a></li> -->
-        <!-- <li><a href="events.html">Events</a></li> -->
-        <!-- <li><a href="news.html">News</a></li> -->
-        <!-- <li><a href="resources.html">Resources</a></li> -->
-       <li><a href="contact.html">Contact Us</a></li> 
-        <!-- <li><a href="notice.html">Notice</a></li> -->
-        <li><a href="https://forms.gle/zvcywFzshwGzdzCJ9">E-Directory</a></li>
-        <li><a href="https://lookerstudio.google.com/reporting/0558ac56-edaf-4313-ade2-c91bd9228c8f">Membership Fee 2023-24</a></li>
-      </ul>
-    </nav>
-  </section>
-  <body>
+<div class="img-container">
+  <img src="rwa.jpeg" alt="." style="width:500px" height="500px">
+  <!-- <h2>Responsive Topnav Example</h2> -->
+  <!-- <p>Resize the browser window to see how it works.</p> -->
+</div>
 
-  <style>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 
-  </style>
-  </head>
-
-  <body>
-
-    <h2>WELCOME</h2>
-
-    <section class="background firstsection">
-      <div class="box-main">
-        <div class="firsthalf">
-          <!-- <p class="text-big">the future of education is here</p> -->
-          <p class="text-small">
-            <br>
-            <br>
-
-            <br>
-
-            We would like to bring your attention to the Block Executives who are available to
-            assist you with any grievances or concerns you may have. They have been designated to address your issues
-            and provide you with the necessary solutions. Additionally, you may also reach out to the office bearers for
-            assistance.
-            <br>
-            We urge all members to work together in finding solutions to any problems that may arise. We believe that
-            cooperation among members is crucial in resolving any issues and creating a harmonious environment for all.
-            <br>
-            Please do not hesitate to reach out to your respective Block Executives or Office Bearers for any assistance
-            you may require. We are here to support you and ensure that your concerns are addressed promptly and
-            effectively.
-            <br>
-
-            Thank you for your cooperation and participation in resolving any issues that may arise. Together, we can
-            create a thriving community that benefits us all.
-          </p>
-
-
-        </div>
-
-
-
-      </div>
-
-      <!-- </section>
-   
-    
-    <div class="slideshow-container" >
-    
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 3</div>
-      <img src="photos/safai1.jpg" style="width:600px"height="600px">
-      <div class="text">Caption Text</div>
-    </div>
-    
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 3</div>
-      <img src="photos/safai2.jpg" style="width:600px"height="600px">
-      <div class="text">Caption Two</div>
-    </div>
-    
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 3</div>
-      <img src="photos/safai3.jpg" style="width:600px"height="600px">
-      <div class="text">Caption Three</div>
-    </div>
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 3</div>
-      <img src="photos/safai5.jpg" style="width:600px"height="600px">
-      <div class="text">Caption Three</div>
-    </div>
-    
-    </div>
-    <br>
-    
-    <div style="text-align:center">
-      <span class="dot"></span> 
-      <span class="dot"></span> 
-      <span class="dot"></span> 
-      <span class="dot"></span> 
-    </div>
-    
-    <script>
-    let slideIndex = 0;
-    showSlides();
-    
-    function showSlides() {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("dot");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {slideIndex = 1}    
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
-      setTimeout(showSlides, 3500); // Change image every 2 seconds
-    }
-    </script> -->
-  </body>
-
+</body>
 </html>
