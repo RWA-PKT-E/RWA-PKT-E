@@ -1,38 +1,106 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>Pocket-E RWA </title>
-    <link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #000000;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: rgb(255, 255, 255);
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .img-container {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-146px;  
+    margin-left:-229px;  
+    cursor:pointer;
+      }
+  
+}
+</style>
 </head>
-
-<body>
-    <header>
-        <nav>
-            <ul>
-                <!-- <li><a href="index.html">Home</a></li> -->
-                <!-- <li><a href="about.html">About Us</a></li> -->
-                <!-- <li><a href="membership.html">Membership</a></li> -->
-                <!-- <li><a href="events.html">Events</a></li> -->
-                <!-- <li><a href="news.html">News</a></li> -->
-                <!-- <li><a href="resources.html">Resources</a></li> -->
-                <li><a href="contact.html">Contact Us</a></li>
-                <!-- <li><a href="notice.html">Notice</a></li> -->
-                <li><a href="https://forms.gle/zvcywFzshwGzdzCJ9">E-Directory Form</a></li>
-                <li><a href="https://lookerstudio.google.com/reporting/08742437-b17f-48f1-b3f1-49ba9aa55f2e/page/t">E-Directory</a></li>
-               
-                <li><a href="https://lookerstudio.google.com/reporting/0558ac56-edaf-4313-ade2-c91bd9228c8f">Membership Fee 2023-24</a></li>
-               
-            </ul>
-        </nav>
-
+   <body>
+      <nav>
+         <ul>
+            <!-- <li class="logo"style="color:white;">RWA PKT-E</li> -->
+            <!-- <li class="btn"><span class="fas fa-bars"></span></li> -->
+            <div class="items">
+                <li><a href="INDEX.html"style="color:white;">Home</a></li>
+               <li><a href="contact.html"style="color:white;">Contact Us</a></li>
+               <li><a href="https://forms.gle/zvcywFzshwGzdzCJ9"style="color:white;">E-Directory Form</a></li>
+               <li><a href="https://lookerstudio.google.com/reporting/08742437-b17f-48f1-b3f1-49ba9aa55f2e/page/t"style="color:white;">E-Directory</a></li>
+              
+               <li><a href="https://lookerstudio.google.com/reporting/0558ac56-edaf-4313-ade2-c91bd9228c8f"style="color:white;">Membership Fee 2023-24</a></li>
+                <li><a href="payment.html"style="color:white;">Payment Link</a></li>
+                <li><a href="https://instagram.com/rwa_pkt_e_mv_2?igshid=NzZhOTFlYzFmZQ=="style="color:white;">Instagram Handle</a></li>
+            </div>
+            <!-- <li class="search-icon">
+               <input type="search" placeholder="Search">
+               <label class="icon">
+               <span class="fas fa-search"></span>
+               </label>
+            </li> -->
+         </ul>
+      </nav>
 
         <H2 text>OFFICE BEARERS </H2>
 
         <div class="row">
             <div class="column">
                 <div class="card">
-                    <img src="jutla.jpeg" alt="." style="width:200px" height="200px">
+                    <img src="photos/jutla.jpeg" alt="." style="width:200px" height="200px">
                     <div class="container">
                         <h2>MS. DAVINDER JUTLA</h2>
                         <p class="title">PRESINDENT</p>
@@ -47,7 +115,7 @@
             <!-- <div class="row"> -->
             <div class="column">
                 <div class="card">
-                    <img src="chadda.jpeg" alt="." style="width:200px" height="200px">
+                    <img src="photos/chadda.jpeg" alt="." style="width:200px" height="200px">
                     <div class="container">
                         <h2>MR .VIJAY KUMAR CHADHA</h2>
                         <p class="title">Vice President</p>
@@ -62,7 +130,7 @@
             <!-- <div class="row"> -->
             <div class="column">
                 <div class="card">
-                    <img src="buri.jpeg" alt="." style="width:200px" height="200px">
+                    <img src="photos/buri.jpeg" alt="." style="width:200px" height="200px">
                     <div class="container">
                         <h2>MR. RAM NIWAS BURI</h2>
                         <p class="title">General Secretary</p>
@@ -77,7 +145,7 @@
         <div class="row">
             <div class="column">
                 <div class="card">
-                    <img src="sunil.jpeg" alt="." style="width:200px" height="200px">
+                    <img src="photos/sunil.jpeg" alt="." style="width:200px" height="200px">
                     <div class="container">
                         <h2>MR. SUNIL ASWANI</h2>
                         <p class="title">Joint Secretary</p>
@@ -91,7 +159,7 @@
             <!-- <div class="row" > -->
             <div class="column">
                 <div class="card">
-                    <img src="raheja.jpeg" alt="." style="width:200px" height="200px">
+                    <img src="photos/raheja.jpeg" alt="." style="width:200px" height="200px">
                     <div class="container">
                         <h2>MR. DHARAM VIR RAHEJA</h2>
                         <p class="title">Treasurer</p>
@@ -118,7 +186,7 @@
         <div class="row">
             <div class="column">
                 <div class="card">
-                    <img src="shalini.jpeg" alt="." style="width:200px" height="200px">
+                    <img src="photos/shalini.jpeg" alt="." style="width:200px" height="200px">
                     <div class="container">
                         <h2>MS. SHALINI VERMA</h2>
                         <p class="title">BLOCK 1.(1-96) </p>
@@ -132,7 +200,7 @@
             <!-- <div class="row"> -->
             <div class="column">
                 <div class="card">
-                    <img src="tomar.jpeg" alt="." style="width:200px" height="200px">
+                    <img src="photos/tomar.jpeg" alt="." style="width:200px" height="200px">
                     <div class="container">
                         <h2>MS. SUSHILA TOMAR</h2>
                         <p class="title">BLOCK 2. (105-184)</p>
@@ -147,7 +215,7 @@
             <!-- <div class="row"> -->
             <div class="column">
                 <div class="card">
-                    <img src="arun.jpeg" alt="." style="width:200px" height="200px">
+                    <img src="photos/arun.jpeg" alt="." style="width:200px" height="200px">
                     <div class="container">
                         <h2>MR. ARUN GUPTA </h2>
                         <p class="title">BLOCK 3. (185-232 & 321-352)</p>
@@ -164,7 +232,7 @@
         <div class="row">
             <div class="column">
                 <div class="card">
-                    <img src="arun.jpe" alt="MR. ADITYA MEHROTRA" style="width:200px" height="200px">
+                    <img src="photos/arun.jpe" alt="MR. ADITYA MEHROTRA" style="width:200px" height="200px">
                     <div class="container">
                         <h2>MR. ADITYA MEHROTRA</h2>
                         <p class="title">BLOCK 4. (233-320)</p>
@@ -179,7 +247,7 @@
             <!-- <div class="row"> -->
             <div class="column">
                 <div class="card">
-                    <img src="sadar.jpeg" alt="John" style="width:200px" height="200px">
+                    <img src="photos/sadar.jpeg" alt="John" style="width:200px" height="200px">
                     <div class="container">
                         <h2>MR. SHAHZAD SADAR</h2>
                         <p class="title">BLOCK 5.( 353- 392 & 489-536)</p>
@@ -193,7 +261,7 @@
             <!-- <div class="row"> -->
             <div class="column">
                 <div class="card">
-                    <img src="madhu.jpeg" alt="John" style="width:200px" height="200px">
+                    <img src="photos/madhu.jpeg" alt="John" style="width:200px" height="200px">
                     <div class="container">
                         <h2>MS. MADHU KUSH</h2>
                         <p class="title">BLOCK 6.(393-488)</p>
@@ -210,7 +278,7 @@
         <div class="row">
             <div class="column">
                 <div class="card">
-                    <img src="anil.jpeg" alt="John" style="width:200px" height="200px">
+                    <img src="photos/anil.jpeg" alt="John" style="width:200px" height="200px">
                     <div class="container">
                         <h2>MR. ANIL RISHI RAJ</h2>
                         <p class="title">BLOCK 7. (537-616)</p>
@@ -225,7 +293,7 @@
             <!-- <div class="row"> -->
             <div class="column">
                 <div class="card">
-                    <img src="gulati.jpeg" alt="John" style="width:200px" height="200px">
+                    <img src="photos/gulati.jpeg" alt="John" style="width:200px" height="200px">
                     <div class="container">
                         <h2>MR. ASHOK GULATI</h2>
                         <p class="title">BLOCK 8. (617-688)</p>
@@ -240,7 +308,7 @@
             <!-- <div class="row"> -->
             <div class="column">
                 <div class="card">
-                    <img src="vijay.jpeg" alt="John" style="width:200px" height="200px">
+                    <img src="photos/vijay.jpeg" alt="John" style="width:200px" height="200px">
                     <div class="container">
                         <h2>MR. VIJAY SINGH KATOCH</h2>
                         <p class="title">BLOCK 9. (689-792)</p>
