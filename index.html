@@ -1,117 +1,336 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- <link rel="stylesheet" href="style.css"> -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-
-.topnav .icon {
-  display: none;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .img-container {
-    background-size: contain;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RWA PKT-E</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    /* Card styles for Office Bearers section */
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0 -16px;
+    }
+    
+    .column {
+      width: 33.33%;
+      padding: 0 16px;
+      margin-bottom: 30px;
+    }
+    
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+      background-color: white;
+      overflow: hidden;
+    }
+    
+    .card img {
+      display: block;
+      margin: 0 auto;
+      padding-top: 20px;
+    }
+    
+    .container {
+      padding: 16px;
+      text-align: center;
+    }
+    
+    .container h2 {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    
+    .title {
+      color: grey;
+      font-weight: bold;
+      margin: 8px 0;
+    }
+    
+    .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      border-radius: 4px;
+    }
+    
+    .button:hover {
+      background-color: #555;
+    }
+    
+    @media screen and (max-width: 768px) {
+      .column {
+        width: 50%;
       }
-  
-}
-</style>
+    }
+    
+    @media screen and (max-width: 500px) {
+      .column {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
-<body>
+<body class="bg-gray-100 text-gray-900">
 
-<div class="topnav" id="myTopnav">
-  <a href="index.html"style="color:white";>Home</a>
-  <a href="contact.html"style="color:white;">Contact Us</a>
-  <a href="https://lookerstudio.google.com/reporting/42b5f585-6425-4c89-a769-74e89c74823e"style="color:white;">Notice Board</a> 
-  <a href="https://forms.gle/zvcywFzshwGzdzCJ9"style="color:white;">E-Directory Form</a>
-  <a href="https://lookerstudio.google.com/reporting/08742437-b17f-48f1-b3f1-49ba9aa55f2e/page/t"style="color:white;">E-Directory</a>
- 
-  <a href="https://lookerstudio.google.com/reporting/0558ac56-edaf-4313-ade2-c91bd9228c8f"style="color:white;">Membership Fee 2023-24</a>
-  <a href="https://lookerstudio.google.com/u/0/reporting/67b2f879-6c63-4d17-ac05-dbef737d3727/page/kEiZD"style="color:white;">Membership Fees 2024-25</a>
-  <a href="https://lookerstudio.google.com/reporting/100d7515-510e-401d-acdb-69b55dd62f51"style="color:white;">Advertisement</a>
-  <a href="https://forms.gle/8fR5bGoXHWBwDDFP8">Service Complaint Form</a>
-  <a href="https://lookerstudio.google.com/reporting/149a2bce-93d3-4425-942e-cab073fa0d8c">Service Complaint Management</a>
-<!--   <a href="payment.html"style="color:white;">Payment Link</a> -->
+  <!-- Header -->
+  <header class="bg-blue-700 text-white py-6 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+      <h1 class="text-3xl font-bold">RWA Pocket-E Mayur Vihar Phase-2</h1>
+      <a href="https://www.instagram.com/rwa_pkt_e_mv_2/?igshid=NzZhOTFlYzFmZQ%3D%3D" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="w-8 h-8" />
+      </a>
+      
+    </div>
+  </header>
 
-  <a href="https://instagram.com/rwa_pkt_e_mv_2?igshid=NzZhOTFlYzFmZQ=="style="color:white;">Instagram Handle</a>
- 
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
+  <!-- Hero Section -->
+  <section class="bg-white py-12 shadow-inner">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl font-semibold mb-6">Welcome to Your RWA Portal</h2>
+      <p class="text-gray-600 mb-8">Stay updated with all resident-related info, notices, events, and more.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="https://lookerstudio.google.com/u/0/reporting/42b5f585-6425-4c89-a769-74e89c74823e/page/p_90ocov0u9c"
+           target="_blank"
+           class="bg-red-500 text-white px-6 py-2 rounded-lg hover:bg-red-600">
+          Notice Board
+        </a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeD--nSEnd4DWe3koiXKLUDWadR4Nee9Vq4sHxNVY2CI3VGrA/viewform"
+           target="_blank"
+           class="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700">
+          E-Directory Form
+        </a>
+        <a href="https://lookerstudio.google.com/u/0/reporting/08742437-b17f-48f1-b3f1-49ba9aa55f2e/page/tuHZD"
+           target="_blank"
+           class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">
+          E-Directory
+        </a>
+        <a href="https://lookerstudio.google.com/u/0/reporting/0558ac56-edaf-4313-ade2-c91bd9228c8f/page/kEiZD"
+           target="_blank"
+           class="bg-purple-500 text-white px-6 py-2 rounded-lg hover:bg-purple-600">
+          Membership Fee 2023–24
+        </a>
+        <a href="https://lookerstudio.google.com/u/0/reporting/67b2f879-6c63-4d17-ac05-dbef737d3727/page/kEiZD"
+           target="_blank"
+           class="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700">
+          Membership Fee 2024–25
+        </a>
+        <a href="https://lookerstudio.google.com/u/0/reporting/100d7515-510e-401d-acdb-69b55dd62f51/page/t8IcD"
+           target="_blank"
+           class="bg-yellow-500 text-white px-6 py-2 rounded-lg hover:bg-yellow-600">
+          Advertisement Section
+        </a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd0Ck4Aw7AkZVBWXBV8rs5z7eGNGw0AXi34CRO5V_7hkWbWeA/viewform"
+           target="_blank"
+           class="bg-red-600 text-white px-6 py-2 rounded-lg hover:bg-red-700">
+          Service Complaint Form
+        </a>
+        <a href="https://lookerstudio.google.com/u/0/reporting/149a2bce-93d3-4425-942e-cab073fa0d8c/page/1dkbD"
+           target="_blank"
+           class="bg-gray-800 text-white px-6 py-2 rounded-lg hover:bg-gray-900">
+          Complaint Management
+        </a>
+      </div>
+    </div>
+  </section>
 
-<div class="img-container">
-  <img src="rwa.jpeg" alt="." style="width:300px" height="300px">
-  <!-- <h2>Responsive Topnav Example</h2> -->
-  <!-- <p>Resize the browser window to see how it works.</p> -->
-</div>
+  <!-- Office Bearers Section -->
+ <!-- Office Bearers Section -->
+<section class="bg-white py-12 shadow-inner mt-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-semibold text-center mb-8">OFFICE BEARERS</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Davinder Jutla -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="p-4 text-center">
+            <img src="jutla.jpeg" alt="MS. DAVINDER JUTLA" class="w-48 h-48 object-cover mx-auto rounded-full">
+            <h3 class="text-xl font-bold mt-4">MS. DAVINDER JUTLA</h3>
+            <p class="text-blue-700 font-semibold">PRESIDENT</p>
+            <p class="text-gray-600 mt-2">Educationist with 40 years of teaching experience.</p>
+            <p class="text-gray-800 font-medium mt-2">9810118279</p>
+            <a href="tel:9810118279" class="mt-4 block bg-blue-700 text-white py-2 rounded hover:bg-blue-800 transition">Contact</a>
+          </div>
+        </div>
+        
+        <!-- Vijay Kumar Chadha -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="p-4 text-center">
+            <img src="chadda.jpeg" alt="MR. VIJAY KUMAR CHADHA" class="w-48 h-48 object-cover mx-auto rounded-full">
+            <h3 class="text-xl font-bold mt-4">MR. VIJAY KUMAR CHADHA</h3>
+            <p class="text-blue-700 font-semibold">Vice President</p>
+            <p class="text-gray-600 mt-2">Businessman</p>
+            <p class="text-gray-800 font-medium mt-2">9810130155</p>
+            <a href="tel:9810130155" class="mt-4 block bg-blue-700 text-white py-2 rounded hover:bg-blue-800 transition">Contact</a>
+          </div>
+        </div>
+        
+        <!-- Ram Niwas Buri -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="p-4 text-center">
+            <img src="buri.jpeg" alt="MR. RAM NIWAS BURI" class="w-48 h-48 object-cover mx-auto rounded-full">
+            <h3 class="text-xl font-bold mt-4">MR. RAM NIWAS BURI</h3>
+            <p class="text-blue-700 font-semibold">General Secretary</p>
+            <p class="text-gray-600 mt-2">Advocate, Supreme Court</p>
+            <p class="text-gray-800 font-medium mt-2">9868239578</p>
+            <a href="tel:9868239578" class="mt-4 block bg-blue-700 text-white py-2 rounded hover:bg-blue-800 transition">Contact</a>
+          </div>
+        </div>
+        
+        <!-- Sunil Aswani -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="p-4 text-center">
+            <img src="sunil.jpeg" alt="MR. SUNIL ASWANI" class="w-48 h-48 object-cover mx-auto rounded-full">
+            <h3 class="text-xl font-bold mt-4">MR. SUNIL ASWANI</h3>
+            <p class="text-blue-700 font-semibold">Joint Secretary</p>
+            <p class="text-gray-600 mt-2">Retired as Sr. Dy. GM(IT) from RITES Ltd. (Ministry Of Railways)</p>
+            <p class="text-gray-800 font-medium mt-2">9873906463</p>
+            <a href="tel:9873906463" class="mt-4 block bg-blue-700 text-white py-2 rounded hover:bg-blue-800 transition">Contact</a>
+          </div>
+        </div>
+        
+        <!-- Dharam Vir Raheja -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="p-4 text-center">
+            <img src="raheja.jpeg" alt="MR. DHARAM VIR RAHEJA" class="w-48 h-48 object-cover mx-auto rounded-full">
+            <h3 class="text-xl font-bold mt-4">MR. DHARAM VIR RAHEJA</h3>
+            <p class="text-blue-700 font-semibold">Treasurer</p>
+            <p class="text-gray-600 mt-2">Retired from REC, a PSU of Govt. of India after 33yrs of service as Finance Manager.</p>
+            <p class="text-gray-800 font-medium mt-2">9999919324</p>
+            <a href="tel:9999919324" class="mt-4 block bg-blue-700 text-white py-2 rounded hover:bg-blue-800 transition">Contact</a>
+          </div>
+        </div>
+      </div>
+      
+      <h2 class="text-3xl font-semibold text-center mb-8 mt-16">BLOCK EXECUTIVE</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Shalini Verma -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="p-4 text-center">
+            <img src="shalini.jpeg" alt="MS. SHALINI VERMA" class="w-48 h-48 object-cover mx-auto rounded-full">
+            <h3 class="text-xl font-bold mt-4">MS. SHALINI VERMA</h3>
+            <p class="text-blue-700 font-semibold">BLOCK 1 (1-96)</p>
+            <p class="text-gray-600 mt-2">Businesswoman in health, pharma and commodities trading industries.</p>
+            <p class="text-gray-800 font-medium mt-2">9999424261</p>
+            <a href="tel:9999424261" class="mt-4 block bg-blue-700 text-white py-2 rounded hover:bg-blue-800 transition">Contact</a>
+          </div>
+        </div>
+        
+        <!-- Sushila Tomar -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="p-4 text-center">
+            <img src="tomar.jpeg" alt="MS. SUSHILA TOMAR" class="w-48 h-48 object-cover mx-auto rounded-full">
+            <h3 class="text-xl font-bold mt-4">MS. SUSHILA TOMAR</h3>
+            <p class="text-blue-700 font-semibold">BLOCK 2 (105-184)</p>
+            <p class="text-gray-600 mt-2">Social Activist. Active member at various sugar mills Mandir Samiti. Coordinator at VMS MV-2</p>
+            <p class="text-gray-800 font-medium mt-2">9810192161</p>
+            <a href="tel:9810192161" class="mt-4 block bg-blue-700 text-white py-2 rounded hover:bg-blue-800 transition">Contact</a>
+          </div>
+        </div>
+        
+        <!-- Arun Gupta -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="p-4 text-center">
+            <img src="arun.jpeg" alt="MR. ARUN GUPTA" class="w-48 h-48 object-cover mx-auto rounded-full">
+            <h3 class="text-xl font-bold mt-4">MR. ARUN GUPTA</h3>
+            <p class="text-blue-700 font-semibold">BLOCK 3 (185-232 & 321-352)</p>
+            <p class="text-gray-600 mt-2">Served the nation through Indian Navy & now serving the society.</p>
+            <p class="text-gray-800 font-medium mt-2">9868213762</p>
+            <a href="tel:9868213762" class="mt-4 block bg-blue-700 text-white py-2 rounded hover:bg-blue-800 transition">Contact</a>
+          </div>
+        </div>
+        
+        <!-- Aditya Mehrotra -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="p-4 text-center">
+            <img src="aditiyamal.jpg" alt="MR. ADITYA MEHROTRA" class="w-48 h-48 object-cover mx-auto rounded-full">
+            <h3 class="text-xl font-bold mt-4">MR. ADITYA MEHROTRA</h3>
+            <p class="text-blue-700 font-semibold">BLOCK 4 (233-320)</p>
+            <p class="text-gray-600 mt-2">Businessman</p>
+            <p class="text-gray-800 font-medium mt-2">9999943118</p>
+            <a href="tel:9999943118" class="mt-4 block bg-blue-700 text-white py-2 rounded hover:bg-blue-800 transition">Contact</a>
+          </div>
+        </div>
+        
+        <!-- Shahzad Sadar -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="p-4 text-center">
+            <img src="sadar.jpeg" alt="MR. SHAHZAD SADAR" class="w-48 h-48 object-cover mx-auto rounded-full">
+            <h3 class="text-xl font-bold mt-4">MR. SHAHZAD SADAR</h3>
+            <p class="text-blue-700 font-semibold">BLOCK 5 (353-392 & 489-536)</p>
+            <p class="text-gray-600 mt-2">Heading Standard Chartered Bank, East Delhi</p>
+            <p class="text-gray-800 font-medium mt-2">9899200911</p>
+            <a href="tel:9899200911" class="mt-4 block bg-blue-700 text-white py-2 rounded hover:bg-blue-800 transition">Contact</a>
+          </div>
+        </div>
+        
+        <!-- Madhu Kush -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="p-4 text-center">
+            <img src="madhu.jpeg" alt="MS. MADHU KUSH" class="w-48 h-48 object-cover mx-auto rounded-full">
+            <h3 class="text-xl font-bold mt-4">MS. MADHU KUSH</h3>
+            <p class="text-blue-700 font-semibold">BLOCK 6 (393-488)</p>
+            <p class="text-gray-600 mt-2">A retired teacher with 40 year of teaching experience.</p>
+            <p class="text-gray-800 font-medium mt-2">9910455261</p>
+            <a href="tel:9910455261" class="mt-4 block bg-blue-700 text-white py-2 rounded hover:bg-blue-800 transition">Contact</a>
+          </div>
+        </div>
+        
+        <!-- Anil Rishi Raj -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="p-4 text-center">
+            <img src="anil.jpeg" alt="MR. ANIL RISHI RAJ" class="w-48 h-48 object-cover mx-auto rounded-full">
+            <h3 class="text-xl font-bold mt-4">MR. ANIL RISHI RAJ</h3>
+            <p class="text-blue-700 font-semibold">BLOCK 7 (537-616)</p>
+            <p class="text-gray-600 mt-2">Worked with a Private Limited Company as DGM(F&A)</p>
+            <p class="text-gray-800 font-medium mt-2">9625233668</p>
+            <a href="tel:9625233668" class="mt-4 block bg-blue-700 text-white py-2 rounded hover:bg-blue-800 transition">Contact</a>
+          </div>
+        </div>
+        
+        <!-- Ashok Gulati -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="p-4 text-center">
+            <img src="gulati.jpeg" alt="MR. ASHOK GULATI" class="w-48 h-48 object-cover mx-auto rounded-full">
+            <h3 class="text-xl font-bold mt-4">MR. ASHOK GULATI</h3>
+            <p class="text-blue-700 font-semibold">BLOCK 8 (617-688)</p>
+            <p class="text-gray-600 mt-2">Owner of Mayur Gallery</p>
+            <p class="text-gray-800 font-medium mt-2">9013031036</p>
+            <a href="tel:9013031036" class="mt-4 block bg-blue-700 text-white py-2 rounded hover:bg-blue-800 transition">Contact</a>
+          </div>
+        </div>
+        
+        <!-- Vijay Singh Katoch -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="p-4 text-center">
+            <img src="vijay.jpeg" alt="MR. VIJAY SINGH KATOCH" class="w-48 h-48 object-cover mx-auto rounded-full">
+            <h3 class="text-xl font-bold mt-4">MR. VIJAY SINGH KATOCH</h3>
+            <p class="text-blue-700 font-semibold">BLOCK 9 (689-792)</p>
+            <p class="text-gray-600 mt-2">Retired senior Banker having served Central Bank of India</p>
+            <p class="text-gray-800 font-medium mt-2">9570495360</p>
+            <a href="tel:9570495360" class="mt-4 block bg-blue-700 text-white py-2 rounded hover:bg-blue-800 transition">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
-<footer style= "color:red;"  >
- <br>
- <br><br><br>
-  <p style= text-align:center; >Hosted/Developed for RWA Pocket-E Mayur Vihar Delhi 
-    <br>
-    By-Anil Rishi Raj</p>
-</footer>
+  <!-- Footer -->
+  <footer class="bg-blue-700 text-white mt-12 py-4 text-center text-sm">
+    <p>Hosted/Developed for RWA Pocket-E Mayur Vihar Delhi</p>
+    <p>By - Anil Rishi Raj</p>
+  </footer>
 
 </body>
 </html>
